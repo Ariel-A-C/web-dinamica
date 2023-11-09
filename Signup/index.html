@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Sign up</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<div id="page_sesion">
+    <template id="iniciar_sesion">
+        <section class="caja_sesion">
+            <div class="caja_info">
+                <a href="../Home/index.php">
+                    <button class="caja_back" id="Back" href="#">
+                        <img src="icon-arrow-left.svg" alt="">
+                        <p class="texto_back">Go back to home</p>
+                    </button>
+                </a>
+
+                <h1 class="title">Get Started Now</h1>
+
+                <form action="signup.php" method="POST">
+                    <h2 class="subtitleE">Username</h2>
+                    <input class="label" type="text" id="text" name="username" placeholder="Enter your username" required>
+
+                    <h2 class="subtitleP">Email address</h2>
+                    <input class="label" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <h2 class="subtitleP">Password</h2>
+                    <input class="label" type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <div class="checkBox">
+                        <input type="checkbox" class="quadrado" id="aceptarTerminos" name="aceptarTerminos" required>
+                        <label for="aceptarTerminos">I agree to the <a href="#">terms & policy</a></label>
+                    </div>
+
+                    <button class="login" type="submit">Sign Up</button>
+                </form>
+
+
+
+
+
+                <button class="login" id="login">Login</button>
+                <div class="botones_redes">
+                    <button class="btn_Redes" id="Google">
+                        <img class="imagen" src="Google.svg" alt="">
+                        <p>Sign in with Google</p>
+                    </button>
+                    <button class="btn_Redes" id="Apple">
+                        <img class="imagen" src="Apple.svg" alt="">
+                        <p>Sign in with Apple</p>
+                    </button>
+                </div>
+                <div class="tener_cuenta">
+                    <h2 class="subtitleH">Have an account?</h2>
+                    <a href="../Login/index.html"><button class="sign_up" id="Sign_up">Login</button></a>
+                </div>
+            </div>
+            <img class="img" src="">
+        </section>
+    </template>
+</div>
+</body>
+</html>
+
+<script>
+    element = document.createElement("iniciar_sesion");
+    element = iniciar_sesion.content.cloneNode(true);
+
+    img = element.querySelector(".img");
+    img.src = "https://picsum.photos/716/534";
+
+    document.getElementById("page_sesion").append(element);
+</script>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>About us</title>
+</head>
+<body>
+    <div id="menu">
+        <template id="menu_superior">
+            <header class="caja_menu">
+                <img class="logo" src="logo.svg" alt="">
+                <a href="../Home/index.php"><button class="boton_menu">Home</button></a>
+                <a href="#"></a><button class="boton_menu">About us</button>
+                <button class="boton_menu">Blogs</button>
+                <button class="boton_menu">Contact</button>
+                <a href="../Login/index.html"><img src="icon-user.svg" alt=""></a>
+                <div class="search">
+                    <input class="label" placeholder="Search">
+                    <img src="search-outline.svg" alt="">
+                </div>
+            </header>
+        </template>
+    </div>
+
+    <div id="page_content">
+        <template id="info">
+            <section class="caja_info">
+                <div class="cajaTextos">
+                    <h1 class="tituloInfo">About us</h1>
+                    <p class="textoInfo">At DellafuenteSL, we believe in the power of travel to transform lives. Our journey began in 2005 when a group of passionate explorers came together to share their love for the world and its boundless wonders. Over the years, we've grown into a dynamic and imaginative travel company dedicated to crafting unforgettable experiences for adventurers of all kinds.</p>
+                    <h2 class="subtitleInfo">Our vision</h2>
+                    <p class="textoInfo">Our vision is simple yet profound: to inspire, connect, and enable travelers to explore the world's most remarkable destinations. We're driven by the belief that each journey has the potential to create memories, enrich lives, and foster a deeper understanding of the diverse cultures that make our world so vibrant.</p>
+                </div>
+                <img class="img" src="" alt="">
+            </section>
+        </template>
+        <template id="choose">
+            <section class="caja_choose_titulo">
+                <h2 class="subtitleInfo">Why Choose DellaFuenteSL?</h2>
+                <div class="caja_choose">
+                    <div class="info_choose">
+                        <div class="caja_num">
+                            <img class="img_num" src="./Nums/icon-number-01.svg" alt="">
+                            <p class="textoInfo">Passion for Exploration: We are not just a travel company; we are a community of explorers who are endlessly curious about the world. Our passion for adventure fuels our commitment to delivering exceptional travel experiences.</p>
+                        </div>
+                        <div class="caja_num">
+                            <img class="img_num" src="./Nums/icon-number-02.svg" alt="">
+                            <p class="textoInfo">Tailored Adventures: We understand that every traveler is unique, and so are their travel preferences. That's why we offer a range of meticulously crafted itineraries, from cultural immersions to adrenaline-pumping escapades, all customized to suit your style.</p>
+                        </div>
+                        <div class="caja_num">
+                            <img class="img_num" src="./Nums/icon-number-03.svg" alt="">
+                            <p class="textoInfo">Expertise: Our team is composed of travel experts who have roamed the far corners of the globe. Their in-depth knowledge and local insights ensure that your journey is filled with authentic encounters and hidden gems.</p>
+                        </div>
+                        <div class="caja_num">
+                            <img class="img_num" src="./Nums/icon-number-04.svg" alt="">
+                            <p class="textoInfo">Sustainability: We are committed to responsible and sustainable travel. We seek to minimize our environmental footprint and maximize the positive impact of tourism on local communities.</p>
+                        </div>
+                        <div class="caja_num">
+                            <img class="img_num" src="./Nums/icon-number-05.svg" alt="">
+                            <p class="textoInfo">Unforgettable Memories: Travel is about creating memories that last a lifetime. We take pride in curating experiences that leave an indelible mark on your heart and mind.</p>
+                        </div>
+                    </div>
+                    <img class="img" src="" alt="">
+                </div>
+            </section>
+        </template>
+        <template id="contact">
+            <section class="caja_info">
+                <div class="cajaTextos">
+                    <h2 class="subtitleInfo">Join Us Your Next Adventure</h2>
+                    <p class="textoInfo">Whether you're a seasoned globetrotter or embarking on your first adventure, DellafuenteSL invites you to join us on a journey of discovery and wonder. Let us be your trusted companion in exploring the extraordinary, the unknown, and the awe-inspiring. Together, we'll make every voyage a story worth telling. Discover the world with DellafuenteSL. Your next adventure is just a click away.</p>
+                    <a href="#"><button class="btnContact">CONTACT</button></a>
+                </div>
+                <img class="img" src="" alt="">
+            </section>
+        </template>
+    </div>
+
+    <div id="footer">
+        <template id="menu_inferior">
+            <footer class="caja_menu_inferior">
+                <img class="logo_footer" src="logo.svg" alt="">
+                <div class="footer_flex">
+                    <p class="texto_footer">Copyright 2022 DELLAFUENTESL.</p>
+                    <a href="#"><button class="boton_footer">Privacy Policy</button></a>
+                    <a href="#"><button class="boton_footer">Terms & Conditions</button></a>
+                    <a href="#"><button class="boton_footer">Cookie Policy</button></a>
+                    <a href="#"><button class="boton_footer">Contact</button></a>
+                </div>
+            </footer>
+        </template>
+    </div>
+</body>
+</html>
+
+<script>
+    element = document.createElement("menu_superior");
+    element = menu_superior.content.cloneNode(true);
+
+    document.getElementById("menu").append(element);
+
+    element = document.createElement("info");
+    element = info.content.cloneNode(true);
+
+    img = element.querySelector(".img");
+    img.src = "https://picsum.photos/600/400";
+
+    document.getElementById("page_content").append(element);
+
+    element = document.createElement("choose");
+    element = choose.content.cloneNode(true);
+
+    img = element.querySelector(".img");
+    img.src = "https://picsum.photos/600/400";
+
+    document.getElementById("page_content").append(element);
+
+    element = document.createElement("contact");
+    element = contact.content.cloneNode(true);
+
+    img = element.querySelector(".img");
+    img.src = "https://picsum.photos/600/400";
+
+    document.getElementById("page_content").append(element);
+
+    element = document.createElement("menu_inferior");
+    element = menu_inferior.content.cloneNode(true);
+
+    document.getElementById("footer").append(element);
+
+</script>

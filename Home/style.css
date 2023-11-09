@@ -1,0 +1,370 @@
+a{
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.label{
+    border-radius: 5px;
+    background: var(--secondary-100, #F4F4F5);
+    display: flex;
+    padding: 8px 8px 8px 16px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border: transparent;
+}
+
+.search{
+    border-radius: 5px;
+    background: var(--secondary-100, #F4F4F5);
+    display: flex;
+    padding: 8px 8px 8px 16px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border: transparent;
+    margin-left: 2.5%;
+}
+
+.caja_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.boton_menu{
+    background: transparent;
+    border: transparent;
+    color: var(--secondary-600, #3B3C4A);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.caja_menu_inferior{
+    display: grid;
+    background: #F6F6F7;
+}
+
+.footer_flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+
+.logo_footer{
+    margin-left: 15%;
+}
+
+.texto_footer{
+    color: #000;
+    font-feature-settings: 'calt' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 15%;
+}
+
+.boton_footer{
+    background: transparent;
+    border: transparent;
+    color: #3B3C4A;
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.imagen{
+    border-radius: 12px;
+}
+
+.img{
+    border-radius: 12px;
+}
+
+.headerImagen{
+    background-image: url("https://picsum.photos/1253/600");
+    width: 70%;
+    margin: 25px auto 200px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+}
+
+.cajaImagen{
+    width: 595.62px;
+    padding: 40px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 12px 24px -6px rgba(24, 26, 42, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px #E8E8EA solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
+    bottom: -75px;
+    left: 100px;
+}
+
+.tituloImagen{
+    color: black;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.textoImagen{
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.sectionLast{
+    display: flex;
+    column-gap: 50px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.tituloLast{
+    position: relative;
+    color: black;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+.textoLast{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.containerLast{
+    position: relative;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-rows: 1fr 70px auto;
+}
+
+.lastBlog{
+    left: 16.30px;
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin: 0px;
+    padding-left: 2.5%;
+}
+
+.containerRecent{
+    position: relative;
+    display: grid;
+    width: 100%;
+}
+
+.recentBlogs{
+    margin-top: 0px;
+    position: relative;
+    color: black;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.cajaRecent{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.tituloRecent{
+    position: relative;
+    color: black;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.botonRecent{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tituloBotonRecent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tituloBlogs{
+    position: relative;
+    text-align: center;
+    color: #111111;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.linea{
+    width: 1350px;
+    position: relative;
+    border: 1px black solid;
+    margin: 50px auto;
+}
+
+.tituloContinente{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 28px;
+    word-wrap: break-word;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.cajaBlogs{
+    position: relative;
+}
+
+.cajaBlog{
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaBlog p {
+    margin: 0;
+}
+
+.cajaBlog h4 {
+    margin: 8px 0px;
+}
+
+.fechaBlog{
+    position: relative;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.tituloBlog{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.textoBlog{
+    position: relative;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 17px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.cajaBoton{
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+}
+
+.textoBoton{
+    position: relative;
+    color: #489CFF;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.flechaBoton{
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.botonMore{
+    position: relative;
+    border: 2px black solid;
+    margin: 50px auto;
+    background: transparent;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 40px;
+}
+
+.containerBlogs{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sectionBlogs{
+    display: grid;
+}
+

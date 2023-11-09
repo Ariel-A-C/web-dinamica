@@ -1,0 +1,147 @@
+a{
+    text-decoration: none;
+}
+
+.caja_sesion{
+    display: flex;
+}
+
+.img{
+    border-radius: 45px 0px 0px 45px;
+    width: 50%;
+}
+
+.caja_info{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+}
+
+.caja_back{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    background: transparent;
+    border: transparent;
+}
+
+.texto_back{
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    margin: 0%;
+}
+
+.title{
+    color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.subtitleE{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+
+.subtitleP{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.subtitleH{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.login{
+    border-radius: 10px;
+    background: #0094FF;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    border: transparent;
+    margin-top: 10%;
+    padding: 0.5rem;
+}
+
+.botones_redes{
+    display: flex;
+    column-gap: 5%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.btn_Redes{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    background: transparent;
+    column-gap: 10px;
+}
+
+.imagen{
+    margin: auto;
+}
+
+.tener_cuenta{
+    display:flex;
+    margin: auto;
+    align-items: center;
+}
+
+.sign_up{
+    color: #0F3DDE;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    background: transparent;
+    border: transparent;
+}
+
+.label{
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    color: var(--muted, #D9D9D9);
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    width: 30vw;
+    padding: 0.5rem;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: var(--muted, #D9D9D9);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    color: #000;
+}

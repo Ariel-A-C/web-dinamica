@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Editar Párrafos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<button class="back-button" onclick="volverAPaginaPrincipal()">Volver a la página principal</button>
+<form class="form" action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+    <!-- Título -->
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+
+    <!-- Subtítulo -->
+    <label for="subtitulo">Subtítulo:</label>
+    <input type="text" id="subtitulo" name="subtitulo" required>
+
+    <!-- Área de Texto -->
+    <label for="texto">Texto:</label>
+    <textarea id="texto" name="texto" rows="4" cols="50" required></textarea>
+
+    <!-- Imagen -->
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+    <input type="submit" value="Enviar">
+</form>
+<script>
+    function volverAPaginaPrincipal() {
+        window.location.href = "index.html"; // Cambia "index.php" al nombre de tu página principal
+    }
+</script>
+
+</body>
+</html>

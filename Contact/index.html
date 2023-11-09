@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="menu">
+        <template id="menu_superior">
+            <header class="caja_menu">
+                <img class="logo" src="logo.svg" alt="">
+                <a href="../Home/index.php"><button class="boton_menu">Home</button></a>
+                <a href="#"></a><button class="boton_menu">About us</button>
+                <button class="boton_menu">Blogs</button>
+                <button class="boton_menu">Contact</button>
+                <a href="../Login/index.html"><img src="icon-user.svg" alt=""></a>
+                <div class="search">
+                    <input class="label" placeholder="Search">
+                    <img src="search-outline.svg" alt="">
+                </div>
+            </header>
+        </template>
+    </div>
+
+
+
+    <div id="footer">
+        <template id="menu_inferior">
+            <footer class="caja_menu_inferior">
+                <img class="logo_footer" src="logo.svg" alt="">
+                <div class="footer_flex">
+                    <p class="texto_footer">Copyright 2022 DELLAFUENTESL.</p>
+                    <a href="#"><button class="boton_footer">Privacy Policy</button></a>
+                    <a href="#"><button class="boton_footer">Terms & Conditions</button></a>
+                    <a href="#"><button class="boton_footer">Cookie Policy</button></a>
+                    <a href="#"><button class="boton_footer">Contact</button></a>
+                </div>
+            </footer>
+        </template>
+    </div>
+</body>
+</html>
+
+<script>
+    element = document.createElement("menu_superior");
+    element = menu_superior.content.cloneNode(true);
+
+    document.getElementById("menu").append(element);
+
+    
+
+    element = document.createElement("menu_inferior");
+    element = menu_inferior.content.cloneNode(true);
+
+    document.getElementById("footer").append(element);
+
+</script>
